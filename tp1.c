@@ -59,7 +59,7 @@ void *cavalo(void *arg) {
 
 
 int main(void) {
-    printf("Digite a quantidade de cavalos competidores:\n");
+    printf("Digite a quantidade de cavalos competidores de 2 a 16:\n");
     scanf("%d", &num_cavalos);
     while(num_cavalos < 2 || num_cavalos > 16){
         printf("Quantidade de competidores invalida\n");
@@ -96,7 +96,6 @@ int main(void) {
     pthread_mutex_destroy(&tela);
     free(cavalos);
     free(ids);
-
 
     return 0;
 
